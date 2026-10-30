@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>{{ product.name }}</title>
+</head>
+<body>
+    <h1>{{ product.name }}</h1>
+    <div class="product_detail">
+        <img src="{{ product.image_url }}" alt="{{ product.product_name }}">
+        <h2>{{ product.product_name }}</h2>
+        <p><strong>Price: Rs.{{ product.price }}</strong></p>
+        <p><strong>Description: {{ product.description }}</strong></p>
+        <p><strong>Available Stock: {{ product.quantity }}</strong></p>
+    </div>
+</body>
+</html>
